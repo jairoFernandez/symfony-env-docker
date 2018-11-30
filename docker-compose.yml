@@ -38,7 +38,10 @@ services:
         container_name: sf4_phpmyadmin
         ports:
             - 8080:80
-        links:
+        environment:
+            PMA_HOST: mysql
+            PMA_PORT: 3306
+        depends_on:
             - mysql
 
     maildev:
