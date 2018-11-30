@@ -33,3 +33,7 @@ rm -Rf /home/wwwroot/sf4/my-temp-folder
 
 *** This project is a copy of ***
 [https://github.com/romaricp/kit-starter-symfony-4-docker](https://github.com/romaricp/kit-starter-symfony-4-docker) :heart:
+
+PD: When you configure the url of your db connection in symfony, the host is the name of container 'sf4_mysql'
+
+`DATABASE_URL=mysql://sf4:sf4@sf4_mysql:3306/sf4`
